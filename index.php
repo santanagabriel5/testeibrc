@@ -62,7 +62,7 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand" href="#">Form IBRC</a>
+            <a class="navbar-brand" href="#" style='margin-left: 1%'>Form IBRC</a>
         </nav>
             <div class="card questoesFormClass">
                 <form method="post" action="#" class="row g-3" >
