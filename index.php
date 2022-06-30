@@ -492,7 +492,7 @@
                                 
                                 <div class="input-group">
                                     <div class="form-group col-md-2">
-                                        <input class="form-control" type="text" id="q10_1" name='q10_1' placeholder="Anos" maxlength="4">
+                                        <input class="form-control" type="text" id="q10_1" name='q10_1' placeholder="Anos" maxlength="2">
                                     </div>
                                     <div class="form-group col-md-2" style="margin-left: 1%" >
                                         <input class="form-control" type="text" id="q10_2" name='q10_2' placeholder="Meses" maxlength="2">
@@ -652,7 +652,8 @@
                     if($( "#q10_1" ).val() == "" || $( "#q10_2" ).val() == ""){
                         $("#alerta").fadeIn('slow');
                     }else{
-                        if(parseInt($( "#q10_1" ).val()) < 2000 || parseInt($( "#q10_2" ).val()) > 11 || parseInt($( "#q10_2" ).val()) <= 0){
+                        if( parseInt($( "#q10_2" ).val()) > 11 || parseInt($( "#q10_2" ).val()) <= 0){
+                            $( "#q10_2" ).val("");
                             $("#alerta").fadeIn('slow');
                         }else{
                             $("#sucesso").fadeIn('slow');
